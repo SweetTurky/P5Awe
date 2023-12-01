@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1ba94d185a45d4c9bb7b88b2e31ca4, type: 3}
+  m_Name: PegasusPath
+  m_EditorClassIdentifier: 
+  m_defaultSpeed: 8
+  m_path:
+  - m_location: {x: -25.308329, y: 44.880356, z: -188.1974}
+    m_rotationEuler: {x: 348.14978, y: 69.44979, z: -0.00000043618286}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: -27.018454, y: 53.584476, z: -188.8385}
+    m_rotationEuler: {x: 348.14978, y: 69.44979, z: -0.00000043618286}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: -28.9029, y: 63.175823, z: -189.54494}
+    m_rotationEuler: {x: 348.14978, y: 69.44979, z: -0.00000043618286}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: -30.421028, y: 70.90269, z: -190.11409}
+    m_rotationEuler: {x: 348.14978, y: 69.44979, z: -0.00000043618286}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: -30.198141, y: 69.76827, z: -190.03055}
+    m_rotationEuler: {x: 348.14978, y: 69.44979, z: -0.00000043618286}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: -30.468203, y: 71.1428, z: -190.1318}
+    m_rotationEuler: {x: 348.14978, y: 69.44979, z: -0.00000043618286}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: -14.875259, y: 63.031242, z: -184.50912}
+    m_rotationEuler: {x: 28.049973, y: 69.74983, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 0.8769784, y: 59.189575, z: -178.60814}
+    m_rotationEuler: {x: 1.5000561, y: 69.899864, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 20.027893, y: 59.84847, z: -175.50836}
+    m_rotationEuler: {x: 359.84988, y: 119.10009, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 39.265633, y: 50.2442, z: -195.50246}
+    m_rotationEuler: {x: 49.500507, y: 125.100136, z: -0.000002629256}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 63.477356, y: 14.706131, z: -195.46513}
+    m_rotationEuler: {x: 39.75284, y: 78.449745, z: 0.0000022210252}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 94.87826, y: 5.675705, z: -202.57767}
+    m_rotationEuler: {x: 1.2032057, y: 117.90017, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 124.01297, y: 6.2890162, z: -219.5284}
+    m_rotationEuler: {x: 357.90326, y: 121.05027, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 153.82162, y: 7.4700603, z: -241.24464}
+    m_rotationEuler: {x: 358.65323, y: 131.55034, z: 0.000000053375594}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 179.64978, y: 8.281437, z: -264.13568}
+    m_rotationEuler: {x: 358.65323, y: 131.55034, z: 0.000000053375594}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 202.45207, y: 7.7529335, z: -269.0225}
+    m_rotationEuler: {x: 359.7031, y: 67.80037, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 234.97688, y: 8.912714, z: -253.1651}
+    m_rotationEuler: {x: 357.60315, y: 63.000355, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 256.38605, y: 10.2480345, z: -242.13448}
+    m_rotationEuler: {x: 356.7032, y: 62.70037, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 276.36792, y: 11.543325, z: -231.82135}
+    m_rotationEuler: {x: 356.7032, y: 62.70037, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 294.0208, y: 14.422365, z: -220.76495}
+    m_rotationEuler: {x: 342.90353, y: 48.45032, z: -0.0000004466226}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 306.46216, y: 22.23122, z: -206.02013}
+    m_rotationEuler: {x: 336.00366, y: 32.250248, z: -0.00000046727246}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 312.66025, y: 24.849485, z: -179.30136}
+    m_rotationEuler: {x: 12.152231, y: 3.7503173, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 313.8574, y: 18.338852, z: -150.00333}
+    m_rotationEuler: {x: 13.65226, y: 354.3003, z: -0.000000054912334}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 317.55624, y: 13.679813, z: -111.82531}
+    m_rotationEuler: {x: 358.80243, y: 11.250072, z: -0.000000013343128}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 317.22388, y: 7.068335, z: -61.49609}
+    m_rotationEuler: {x: 29.402666, y: 0.89970964, z: 0.000000015312617}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 307.28134, y: 3.699959, z: -28.71099}
+    m_rotationEuler: {x: 354.90295, y: 306.7507, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 291.67896, y: 8.789258, z: -0.9021312}
+    m_rotationEuler: {x: 2.7018776, y: 10.949641, z: 0.00000002671012}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 284.69846, y: 8.322506, z: 30.953043}
+    m_rotationEuler: {x: 1.6517364, y: 303.75046, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 257.41946, y: 7.293048, z: 57.8429}
+    m_rotationEuler: {x: 7.80167, y: 358.04977, z: 0.000000013464845}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 237.45087, y: 6.046976, z: 83.247}
+    m_rotationEuler: {x: 0.30167696, y: 286.05084, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 208.32588, y: 6.4975696, z: 87.29902}
+    m_rotationEuler: {x: 358.05176, y: 275.55112, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 162.84193, y: 8.033661, z: 80.716255}
+    m_rotationEuler: {x: 358.80157, y: 251.40167, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 121.7846, y: 15.639569, z: 85.89981}
+    m_rotationEuler: {x: 333.75223, y: 290.99997, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 83.67857, y: 18.97354, z: 115.50218}
+    m_rotationEuler: {x: 10.95081, y: 343.3453, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 99.89449, y: 15.1168585, z: 163.8409}
+    m_rotationEuler: {x: 1.2010294, y: 51.4446, z: 0.000000053372577}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 136.74728, y: 15.267464, z: 183.37529}
+    m_rotationEuler: {x: 359.40106, y: 64.044716, z: -0.000000026681883}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 210.46146, y: 16.125471, z: 219.46725}
+    m_rotationEuler: {x: 359.40106, y: 63.594696, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 235.0583, y: 22.255394, z: 249.04059}
+    m_rotationEuler: {x: 337.65158, y: 32.24483, z: -0.00000046155478}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 266.97977, y: 52.613857, z: 297.30887}
+    m_rotationEuler: {x: 311.70187, y: 52.34484, z: 0.0000025667564}
+    m_dofDistance: {x: 0, y: 0, z: 0}
