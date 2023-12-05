@@ -1,6 +1,11 @@
 fileFormatVersion: 2
-guid: aaca1c4ec4b9eaa42a4535e6150eed7e
+<<<<<<<< HEAD:Assets/PureNature/Scenes/Scene_Demo/Soff/Runestone/mesh/Materials/default.mat.meta
+guid: b31f9273c761c2649a0ca3f773b2dd09
 NativeFormatImporter:
+========
+guid: bcaa4d90c7d40f4478448316c39be166
+DefaultImporter:
+>>>>>>>> 18529176e9fed246097699e2454613ea61cff9d1:Assets/PureNature/Settings/Built-in/Built-in.unitypackage.meta
   externalObjects: {}
   mainObjectFileID: 2100000
   userData: 
