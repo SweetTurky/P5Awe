@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/PureNature/Scenes/Scene_Demo/TempleDemo.meta
 guid: 4f083e1ba129ea446b80f96ff2e7b26e
 folderAsset: yes
+========
+guid: 0bfc8f205563e5e429754b12c0fe1a7f
+>>>>>>>> 18529176e9fed246097699e2454613ea61cff9d1:Assets/PureNature/Scenes/Scene_Demo/(Malte)TempleDemo.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
