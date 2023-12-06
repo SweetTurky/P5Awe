@@ -14,120 +14,192 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_defaultSpeed: 8
   m_path:
-  - m_location: {x: -25.308329, y: 44.880356, z: -188.1974}
-    m_rotationEuler: {x: 348.14978, y: 69.44979, z: -0.00000043618286}
+  - m_location: {x: 72.37, y: 184, z: -547.36}
+    m_rotationEuler: {x: -0, y: 0, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: -27.018454, y: 53.584476, z: -188.8385}
-    m_rotationEuler: {x: 348.14978, y: 69.44979, z: -0.00000043618286}
+  - m_location: {x: 72.37, y: 185.04793, z: -547.36}
+    m_rotationEuler: {x: -0, y: 0, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: -28.9029, y: 63.175823, z: -189.54494}
-    m_rotationEuler: {x: 348.14978, y: 69.44979, z: -0.00000043618286}
+  - m_location: {x: 72.37, y: 183.99751, z: -547.36}
+    m_rotationEuler: {x: -0, y: 0, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: -30.421028, y: 70.90269, z: -190.11409}
-    m_rotationEuler: {x: 348.14978, y: 69.44979, z: -0.00000043618286}
+  - m_location: {x: 72.37, y: 187.81105, z: -547.36}
+    m_rotationEuler: {x: -0, y: 0, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: -30.198141, y: 69.76827, z: -190.03055}
-    m_rotationEuler: {x: 348.14978, y: 69.44979, z: -0.00000043618286}
+  - m_location: {x: 72.37, y: 191.70607, z: -547.36}
+    m_rotationEuler: {x: -0, y: 0, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: -30.468203, y: 71.1428, z: -190.1318}
-    m_rotationEuler: {x: 348.14978, y: 69.44979, z: -0.00000043618286}
+  - m_location: {x: 72.37, y: 196.21886, z: -547.36}
+    m_rotationEuler: {x: -0, y: 0, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: -14.875259, y: 63.031242, z: -184.50912}
-    m_rotationEuler: {x: 28.049973, y: 69.74983, z: 0}
+  - m_location: {x: 72.37, y: 200.35075, z: -547.36}
+    m_rotationEuler: {x: -0, y: 0, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 0.8769784, y: 59.189575, z: -178.60814}
-    m_rotationEuler: {x: 1.5000561, y: 69.899864, z: 0}
+  - m_location: {x: 72.37, y: 203.73975, z: -547.36}
+    m_rotationEuler: {x: -0, y: 0, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 20.027893, y: 59.84847, z: -175.50836}
-    m_rotationEuler: {x: 359.84988, y: 119.10009, z: 0}
+  - m_location: {x: 72.37, y: 208.75603, z: -547.36}
+    m_rotationEuler: {x: -0, y: 0, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 39.265633, y: 50.2442, z: -195.50246}
-    m_rotationEuler: {x: 49.500507, y: 125.100136, z: -0.000002629256}
+  - m_location: {x: 72.37, y: 213.41724, z: -547.36}
+    m_rotationEuler: {x: -0, y: 0, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 63.477356, y: 14.706131, z: -195.46513}
-    m_rotationEuler: {x: 39.75284, y: 78.449745, z: 0.0000022210252}
+  - m_location: {x: 72.37, y: 218.26782, z: -547.36}
+    m_rotationEuler: {x: -0, y: 0, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 94.87826, y: 5.675705, z: -202.57767}
-    m_rotationEuler: {x: 1.2032057, y: 117.90017, z: 0}
+  - m_location: {x: 72.37, y: 224.12079, z: -547.36}
+    m_rotationEuler: {x: 45, y: 0, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 124.01297, y: 6.2890162, z: -219.5284}
-    m_rotationEuler: {x: 357.90326, y: 121.05027, z: 0}
+  - m_location: {x: 71.66942, y: 198.86331, z: -529.5042}
+    m_rotationEuler: {x: 55.500095, y: 357.60004, z: -0.00000018841948}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 153.82162, y: 7.4700603, z: -241.24464}
-    m_rotationEuler: {x: 358.65323, y: 131.55034, z: 0.000000053375594}
+  - m_location: {x: 64.51729, y: 115.61319, z: -482.14014}
+    m_rotationEuler: {x: 34.950607, y: 312.90015, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 179.64978, y: 8.281437, z: -264.13568}
-    m_rotationEuler: {x: 358.65323, y: 131.55034, z: 0.000000053375594}
+  - m_location: {x: 12.704539, y: 70.3773, z: -435.66476}
+    m_rotationEuler: {x: 27.00064, y: 302.70013, z: -0.000000958218}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 202.45207, y: 7.7529335, z: -269.0225}
-    m_rotationEuler: {x: 359.7031, y: 67.80037, z: 0}
+  - m_location: {x: -0.5813508, y: 62.516537, z: -427.5156}
+    m_rotationEuler: {x: 26.700647, y: 301.2001, z: 0.0000009556815}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 234.97688, y: 8.912714, z: -253.1651}
-    m_rotationEuler: {x: 357.60315, y: 63.000355, z: 0}
+  - m_location: {x: -8.650376, y: 53.148914, z: -413.10123}
+    m_rotationEuler: {x: 30.750673, y: 353.39996, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 256.38605, y: 10.2480345, z: -242.13448}
-    m_rotationEuler: {x: 356.7032, y: 62.70037, z: 0}
+  - m_location: {x: -5.9852347, y: 40.177765, z: -382.05023}
+    m_rotationEuler: {x: 12.450759, y: 358.04996, z: -0.000000013661508}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 276.36792, y: 11.543325, z: -231.82135}
-    m_rotationEuler: {x: 356.7032, y: 62.70037, z: 0}
+  - m_location: {x: -11.437368, y: 39.04364, z: -346.10504}
+    m_rotationEuler: {x: 358.6508, y: 350.8499, z: -0.0000000066719563}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 294.0208, y: 14.422365, z: -220.76495}
-    m_rotationEuler: {x: 342.90353, y: 48.45032, z: -0.0000004466226}
+  - m_location: {x: -15.036395, y: 39.35938, z: -323.59097}
+    m_rotationEuler: {x: 1.8006388, y: 352.04987, z: 0.000000013346805}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 306.46216, y: 22.23122, z: -206.02013}
-    m_rotationEuler: {x: 336.00366, y: 32.250248, z: -0.00000046727246}
+  - m_location: {x: -4.21334, y: 34.71087, z: -302.13065}
+    m_rotationEuler: {x: 15.150654, y: 48.59981, z: -0.00000088451776}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 312.66025, y: 24.849485, z: -179.30136}
-    m_rotationEuler: {x: 12.152231, y: 3.7503173, z: 0}
+  - m_location: {x: 18.13029, y: 26.17635, z: -272.41574}
+    m_rotationEuler: {x: 9.300694, y: 24.299858, z: 0.00000021628675}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 313.8574, y: 18.338852, z: -150.00333}
-    m_rotationEuler: {x: 13.65226, y: 354.3003, z: -0.000000054912334}
+  - m_location: {x: 34.162388, y: 19.794785, z: -238.66864}
+    m_rotationEuler: {x: 10.800709, y: 28.199844, z: -0.00000021729278}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 317.55624, y: 13.679813, z: -111.82531}
-    m_rotationEuler: {x: 358.80243, y: 11.250072, z: -0.000000013343128}
+  - m_location: {x: 46.60236, y: 15.415034, z: -219.25783}
+    m_rotationEuler: {x: 10.350714, y: 46.049862, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 317.22388, y: 7.068335, z: -61.49609}
-    m_rotationEuler: {x: 29.402666, y: 0.89970964, z: 0.000000015312617}
+  - m_location: {x: 69.89477, y: 11.445237, z: -206.24574}
+    m_rotationEuler: {x: 5.4007487, y: 76.34989, z: 0.00000021439514}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 307.28134, y: 3.699959, z: -28.71099}
-    m_rotationEuler: {x: 354.90295, y: 306.7507, z: 0}
+  - m_location: {x: 103.56793, y: 9.649079, z: -211.90843}
+    m_rotationEuler: {x: 0.9007658, y: 115.04983, z: 0.000000026683722}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 291.67896, y: 8.789258, z: -0.9021312}
-    m_rotationEuler: {x: 2.7018776, y: 10.949641, z: 0.00000002671012}
+  - m_location: {x: 144.39824, y: 10.638613, z: -236.32147}
+    m_rotationEuler: {x: 358.2008, y: 122.099945, z: 0.000000053387176}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 284.69846, y: 8.322506, z: 30.953043}
-    m_rotationEuler: {x: 1.6517364, y: 303.75046, z: 0}
+  - m_location: {x: 182.77031, y: 8.56864, z: -258.42197}
+    m_rotationEuler: {x: 7.500714, y: 112.64999, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 257.41946, y: 7.293048, z: 57.8429}
-    m_rotationEuler: {x: 7.80167, y: 358.04977, z: 0.000000013464845}
+  - m_location: {x: 230.76216, y: 8.75339, z: -258.45587}
+    m_rotationEuler: {x: 356.70078, y: 61.949886, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 237.45087, y: 6.046976, z: 83.247}
-    m_rotationEuler: {x: 0.30167696, y: 286.05084, z: 0}
+  - m_location: {x: 287.42056, y: 10.27247, z: -226.55733}
+    m_rotationEuler: {x: 1.5006492, y: 58.49989, z: 0.00000005337916}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 208.32588, y: 6.4975696, z: 87.29902}
-    m_rotationEuler: {x: 358.05176, y: 275.55112, z: 0}
+  - m_location: {x: 318.232, y: 11.9557905, z: -191.20195}
+    m_rotationEuler: {x: 357.30072, y: 7.049887, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 162.84193, y: 8.033661, z: 80.716255}
-    m_rotationEuler: {x: 358.80157, y: 251.40167, z: 0}
+  - m_location: {x: 314.49365, y: 13.190886, z: -132.76985}
+    m_rotationEuler: {x: 0.00055643317, y: 0.4498463, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 121.7846, y: 15.639569, z: 85.89981}
-    m_rotationEuler: {x: 333.75223, y: 290.99997, z: 0}
+  - m_location: {x: 316.02295, y: 13.166641, z: -92.31843}
+    m_rotationEuler: {x: 0.60055643, y: 359.39984, z: -2.0845228e-10}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 83.67857, y: 18.97354, z: 115.50218}
-    m_rotationEuler: {x: 10.95081, y: 343.3453, z: 0}
+  - m_location: {x: 307.9605, y: 10.690343, z: -32.678123}
+    m_rotationEuler: {x: 3.1505597, y: 341.99985, z: 0.000000053441628}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 99.89449, y: 15.1168585, z: 163.8409}
-    m_rotationEuler: {x: 1.2010294, y: 51.4446, z: 0.000000053372577}
+  - m_location: {x: 294.55844, y: 8.84083, z: 3.4568243}
+    m_rotationEuler: {x: 0.4505634, y: 327.59985, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 136.74728, y: 15.267464, z: 183.37529}
-    m_rotationEuler: {x: 359.40106, y: 64.044716, z: -0.000000026681883}
+  - m_location: {x: 270.9038, y: 9.732091, z: 26.246515}
+    m_rotationEuler: {x: 358.2006, y: 295.7999, z: -0.000000053387176}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 210.46146, y: 16.125471, z: 219.46725}
-    m_rotationEuler: {x: 359.40106, y: 63.594696, z: 0}
+  - m_location: {x: 222.31497, y: 11.71858, z: 46.86417}
+    m_rotationEuler: {x: 358.95056, y: 282.2999, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 235.0583, y: 22.255394, z: 249.04059}
-    m_rotationEuler: {x: 337.65158, y: 32.24483, z: -0.00000046155478}
+  - m_location: {x: 183.46892, y: 11.031538, z: 52.690926}
+    m_rotationEuler: {x: 1.5005565, y: 277.64987, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
-  - m_location: {x: 266.97977, y: 52.613857, z: 297.30887}
-    m_rotationEuler: {x: 311.70187, y: 52.34484, z: 0.0000025667564}
+  - m_location: {x: 132.75568, y: 11.341164, z: 58.081623}
+    m_rotationEuler: {x: 358.5006, y: 275.55, z: -0.00000005337912}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 90.757744, y: 12.924858, z: 55.544518}
+    m_rotationEuler: {x: 356.55063, y: 243.89978, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 59.24645, y: 13.920967, z: 81.809845}
+    m_rotationEuler: {x: 1.5002335, y: 16.49959, z: 0.000000013344787}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 75.79796, y: 15.005636, z: 129.69182}
+    m_rotationEuler: {x: 357.1503, y: 17.849657, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 94.571266, y: 17.855267, z: 169.29794}
+    m_rotationEuler: {x: 355.65036, y: 39.29974, z: 0.00000021405994}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 136.52094, y: 12.344762, z: 199.25371}
+    m_rotationEuler: {x: 12.750155, y: 57.599792, z: -0.00000043767923}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 177.44688, y: 11.962518, z: 236.51389}
+    m_rotationEuler: {x: 343.95023, y: 37.649815, z: -0.00000044420096}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 203.77469, y: 31.541227, z: 269.37418}
+    m_rotationEuler: {x: 318.60034, y: 41.249924, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 253.68279, y: 94.37321, z: 329.334}
+    m_rotationEuler: {x: 348.14978, y: 37.64999, z: -0.00000043618286}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 345.7338, y: 106.71997, z: 434.73093}
+    m_rotationEuler: {x: 359.84955, y: 42.30009, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 416.4677, y: 94.40211, z: 512.81323}
+    m_rotationEuler: {x: 23.099613, y: 15.600159, z: -0.00000023204808}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 426.65775, y: 57.020157, z: 561.0419}
+    m_rotationEuler: {x: 49.799976, y: 5.5502095, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 428.37326, y: 19.014376, z: 590.8983}
+    m_rotationEuler: {x: 51.000076, y: 2.5502074, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 436.14996, y: 0.6076884, z: 612.6068}
+    m_rotationEuler: {x: 26.400223, y: 42.150227, z: 0.0000009531807}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 455.5388, y: -8.695174, z: 624.68695}
+    m_rotationEuler: {x: 17.700325, y: 78.0002, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 478.84186, y: -16.34832, z: 620.31915}
+    m_rotationEuler: {x: 17.550386, y: 120.0002, z: -0.0000008954551}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 500.17596, y: -27.407042, z: 601.67285}
+    m_rotationEuler: {x: 23.250435, y: 134.10019, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 519.9913, y: -31.558292, z: 582.47003}
+    m_rotationEuler: {x: 0.9004567, y: 133.8002, z: -0.000000026683715}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 540.87665, y: -32.0131, z: 562.4415}
+    m_rotationEuler: {x: 0.90045685, y: 133.8002, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 554.6814, y: -32.189934, z: 553.6656}
+    m_rotationEuler: {x: 4.3504395, y: 93.90023, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 564.0696, y: -33.026978, z: 555.3828}
+    m_rotationEuler: {x: 4.8004436, y: 72.45022, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 584.1595, y: -35.386936, z: 547.2171}
+    m_rotationEuler: {x: 7.0504704, y: 134.25012, z: 0.00000021506968}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 603.4424, y: -39.31381, z: 528.2871}
+    m_rotationEuler: {x: 14.850488, y: 134.55011, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 610.8883, y: -44.10172, z: 520.89594}
+    m_rotationEuler: {x: 41.850544, y: 134.5501, z: 0}
+    m_dofDistance: {x: 0, y: 0, z: 0}
+  - m_location: {x: 620.7871, y: -52.21975, z: 511.57812}
+    m_rotationEuler: {x: 8.550633, y: 132.30011, z: 0}
     m_dofDistance: {x: 0, y: 0, z: 0}
