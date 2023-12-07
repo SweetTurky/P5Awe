@@ -2,16 +2,14 @@ using UnityEngine;
 
 public class TorchCollision : MonoBehaviour
 {
-    public GameObject sphereCollider; // Reference to the sphere collider GameObject
-
     private void OnTriggerEnter(Collider other)
     {
         // Check if the collided object has a TurnMeOn component
         TurnMeOn turnMeOnComponent = other.GetComponent<TurnMeOn>();
 
-        if (turnMeOnComponent != null && other.gameObject == sphereCollider)
+        if (turnMeOnComponent != null && other.gameObject != gameObject) // Ignore collision with self
         {
-            // Activate the lights and particle systems on collision with the sphere collider
+            // Activate the lights and particle systems on collision with other objects' sphere colliders
             turnMeOnComponent.ActivateLightAndParticles();
         }
     }

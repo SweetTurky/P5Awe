@@ -2,27 +2,19 @@ using UnityEngine;
 
 public class TurnMeOn : MonoBehaviour
 {
-    public Light[] pointLights; // Array of point lights
-    public ParticleSystem[] particleSystems; // Array of particle systems
-
     public void ActivateLightAndParticles()
     {
-        // Activate all point lights in the array
-        foreach (Light light in pointLights)
+        // Activate lights and particle systems on collision
+        Light[] lights = GetComponentsInChildren<Light>();
+        foreach (Light light in lights)
         {
-            if (light != null)
-            {
-                light.enabled = true;
-            }
+            light.enabled = true;
         }
 
-        // Play all particle systems in the array
+        ParticleSystem[] particleSystems = GetComponentsInChildren<ParticleSystem>();
         foreach (ParticleSystem particles in particleSystems)
         {
-            if (particles != null)
-            {
-                particles.Play();
-            }
+            particles.Play();
         }
     }
 }
