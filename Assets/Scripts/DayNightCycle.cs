@@ -7,6 +7,8 @@ public class DayNightCycle : MonoBehaviour
     public Material nightSkybox; // Reference to the skybox material for night
     public Color dayFogColor; // Color for day fog
     public Color nightFogColor; // Color for night fog
+    public float dayFogDensity; // Density for day fog
+    public float nightFogDensity; // Density for night fog
     public GameObject cloudsDayPrefab; // Reference to the clouds prefab for day
     public GameObject cloudsNightPrefab; // Reference to the clouds prefab for night
     public float transitionSpeed = 1.0f; // Adjust this to control the transition speed
@@ -33,7 +35,8 @@ public class DayNightCycle : MonoBehaviour
         skyboxMaterial = nightSkybox;
         RenderSettings.skybox = skyboxMaterial;
         RenderSettings.fogColor = nightFogColor;
-        targetFogColor = nightFogColor; // Assuming starting during the night
+        RenderSettings.fogDensity = nightFogDensity; // Assuming starting during the night
+        targetFogColor = nightFogColor;
 
         // Convert hexadecimal color to Unity Color for night and day directional lights
         nightLightColor = HexToColor("355BA2");
@@ -56,8 +59,9 @@ public class DayNightCycle : MonoBehaviour
         currentIntensity = Mathf.Lerp(currentIntensity, targetIntensity, Time.deltaTime * transitionSpeed);
         sun.intensity = currentIntensity;
 
-        // Transition fog color
+        // Transition fog color and density
         RenderSettings.fogColor = Color.Lerp(RenderSettings.fogColor, targetFogColor, Time.deltaTime * transitionSpeed);
+        RenderSettings.fogDensity = Mathf.Lerp(RenderSettings.fogDensity, targetIntensity > 0.3f ? dayFogDensity : nightFogDensity, Time.deltaTime * transitionSpeed);
     }
 
     // Method to trigger the day-night transition
@@ -69,6 +73,7 @@ public class DayNightCycle : MonoBehaviour
             targetIntensity = nightTargetIntensity; // Set to night
             skyboxMaterial = nightSkybox;
             targetFogColor = nightFogColor;
+            RenderSettings.fogDensity = nightFogDensity;
             sun.color = nightLightColor; // Set night directional light color
             cloudsNightPrefab.SetActive(true); // Enable clouds for night
             cloudsDayPrefab.SetActive(false); // Disable clouds for day
@@ -79,6 +84,7 @@ public class DayNightCycle : MonoBehaviour
             targetIntensity = dayTargetIntensity; // Set to day
             skyboxMaterial = daySkybox;
             targetFogColor = dayFogColor;
+            RenderSettings.fogDensity = dayFogDensity;
             sun.color = dayLightColor; // Set day directional light color
             cloudsDayPrefab.SetActive(true); // Enable clouds for day
             cloudsNightPrefab.SetActive(false); // Disable clouds for night
