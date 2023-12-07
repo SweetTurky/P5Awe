@@ -27,7 +27,32 @@ public class VignetteController : MonoBehaviour
 
     void Start()
     {
-        // ... (existing code remains unchanged)
+        // Ensure the Global Volume is assigned
+        if (globalVolume == null)
+        {
+            Debug.LogError("Global Volume is not assigned!");
+            return;
+        }
+
+        // Try to get the Vignette component from the Global Volume
+        if (!globalVolume.profile.TryGet(out vignette))
+        {
+            // Add the Vignette component if it doesn't exist in the profile
+            vignette = globalVolume.profile.Add<Vignette>();
+        }
+
+        // Ensure the Vignette component is not null
+        if (vignette == null)
+        {
+            Debug.LogError("Vignette component not found or could not be added!");
+            return;
+        }
+
+        // Initialize values
+        currentIntensity = vignette.intensity.value;
+        currentSmoothness = vignette.smoothness.value;
+        targetIntensity = currentIntensity;
+        targetSmoothness = currentSmoothness;
 
         // Store the original values
         originalIntensity = vignetteIntensity;
@@ -58,6 +83,19 @@ public class VignetteController : MonoBehaviour
 
     void Update()
     {
-        // ... (existing code remains unchanged)
+        // Gradually transition vignette parameters
+        if (transitionTimer < transitionDuration)
+        {
+            transitionTimer += Time.deltaTime;
+            float t = Mathf.Clamp01(transitionTimer / transitionDuration);
+
+            // Apply gradual changes
+            vignette.intensity.Override(Mathf.Lerp(currentIntensity, targetIntensity, t));
+            vignette.smoothness.Override(Mathf.Lerp(currentSmoothness, targetSmoothness, t));
+        }
+
+        // Update current values
+        currentIntensity = vignette.intensity.value;
+        currentSmoothness = vignette.smoothness.value;
     }
 }
