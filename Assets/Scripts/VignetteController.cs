@@ -7,25 +7,16 @@ public class VignetteController : MonoBehaviour
     public Volume globalVolume; // Reference to the Global Volume in your hierarchy
     private Vignette vignette; // Reference to the Vignette component
 
-    [Range(0f, 1f)]
-    public float vignetteIntensity = 0.5f; // Intensity of the vignette effect
-
-    [Range(0f, 1f)]
-    public float vignetteSmoothness = 0.5f; // Smoothness of the vignette effect
+    private float originalIntensity;
+    private float originalSmoothness;
 
     public float transitionDuration = 1.0f; // Duration of the transition effect
 
-    private float currentIntensity;
-    private float currentSmoothness;
     private float targetIntensity;
     private float targetSmoothness;
     private float transitionTimer;
 
-    // Store the original values
-    private float originalIntensity;
-    private float originalSmoothness;
-
-    void Start()
+    private void Start()
     {
         // Ensure the Global Volume is assigned
         if (globalVolume == null)
@@ -48,40 +39,34 @@ public class VignetteController : MonoBehaviour
             return;
         }
 
-        // Initialize values
-        currentIntensity = vignette.intensity.value;
-        currentSmoothness = vignette.smoothness.value;
-        targetIntensity = currentIntensity;
-        targetSmoothness = currentSmoothness;
-
         // Store the original values
-        originalIntensity = vignetteIntensity;
-        originalSmoothness = vignetteSmoothness;
+        originalIntensity = vignette.intensity.value;
+        originalSmoothness = vignette.smoothness.value;
     }
 
-    // Method to gradually change vignette parameters
-    public void ChangeVignetteParameters()
+    // Method to gradually increase vignette parameters
+    public void GraduallyIncreaseVignette()
     {
-        // Update target values
-        targetIntensity = vignetteIntensity;
-        targetSmoothness = vignetteSmoothness;
+        // Set target values for the increase
+        targetIntensity = 0.85f; // You can adjust this value based on your needs
+        targetSmoothness = 0.3f; // You can adjust this value based on your needs
 
-        // Start transition
+        // Start the transition
         transitionTimer = 0f;
     }
 
-    // Method to revert vignette parameters to their original values gradually
-    public void RevertVignetteParameters()
+    // Method to gradually revert vignette parameters to their original values
+    public void GraduallyRevertVignette()
     {
-        // Set the values back to their original state
-        vignetteIntensity = originalIntensity;
-        vignetteSmoothness = originalSmoothness;
+        // Set target values for the revert
+        targetIntensity = originalIntensity;
+        targetSmoothness = originalSmoothness;
 
-        // Start transition to revert to original values
-        ChangeVignetteParameters();
+        // Start the transition
+        transitionTimer = 0f;
     }
 
-    void Update()
+    private void Update()
     {
         // Gradually transition vignette parameters
         if (transitionTimer < transitionDuration)
@@ -90,12 +75,8 @@ public class VignetteController : MonoBehaviour
             float t = Mathf.Clamp01(transitionTimer / transitionDuration);
 
             // Apply gradual changes
-            vignette.intensity.Override(Mathf.Lerp(currentIntensity, targetIntensity, t));
-            vignette.smoothness.Override(Mathf.Lerp(currentSmoothness, targetSmoothness, t));
+            vignette.intensity.Override(Mathf.Lerp(originalIntensity, targetIntensity, t));
+            vignette.smoothness.Override(Mathf.Lerp(originalSmoothness, targetSmoothness, t));
         }
-
-        // Update current values
-        currentIntensity = vignette.intensity.value;
-        currentSmoothness = vignette.smoothness.value;
     }
 }
