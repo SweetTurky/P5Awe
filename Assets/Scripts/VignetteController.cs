@@ -48,8 +48,8 @@ public class VignetteController : MonoBehaviour
     public void GraduallyIncreaseVignette()
     {
         // Set target values for the increase
-        targetIntensity = 0.85f; // You can adjust this value based on your needs
-        targetSmoothness = 0.3f; // You can adjust this value based on your needs
+        targetIntensity = 0.90f; // You can adjust this value based on your needs
+        targetSmoothness = 0.25f; // You can adjust this value based on your needs
 
         // Start the transition
         transitionTimer = 0f;
