@@ -92,6 +92,20 @@ public class DayNightCycle : MonoBehaviour
         }
     }
 
+    // Method to gradually increase fog density towards a specific value
+    public void IncreaseFogDensityTowards(float targetDensity)
+    {
+        float newDensity = Mathf.MoveTowards(RenderSettings.fogDensity, targetDensity, Time.deltaTime * transitionSpeed);
+        RenderSettings.fogDensity = newDensity;
+    }
+
+    // Method to gradually decrease fog density towards a specific value
+    public void DecreaseFogDensityTowards(float targetDensity)
+    {
+        float newDensity = Mathf.MoveTowards(RenderSettings.fogDensity, targetDensity, Time.deltaTime * transitionSpeed);
+        RenderSettings.fogDensity = newDensity;
+    }
+
     // Helper method to convert hexadecimal color to Unity Color
     private Color HexToColor(string hex)
     {
