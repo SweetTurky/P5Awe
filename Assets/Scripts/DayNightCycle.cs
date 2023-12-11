@@ -16,8 +16,7 @@ public class DayNightCycle : MonoBehaviour
     [SerializeField] private float nightTargetIntensity = 0.0f;
 
     private float targetIntensity;
-    private Material skyboxMaterial;
-    private Color targetFogColor;
+    public Color targetFogColor;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +36,6 @@ public class DayNightCycle : MonoBehaviour
     public void TriggerDayTransition()
     {
         targetIntensity = dayTargetIntensity; // Set to day
-        skyboxMaterial = daySkybox;
         targetFogColor = dayFogColor;
         RenderSettings.fogDensity = dayFogDensity;
         cloudsDayPrefab.SetActive(true); // Enable clouds for day
@@ -45,14 +43,12 @@ public class DayNightCycle : MonoBehaviour
         RenderSettings.skybox = daySkybox; // Change the skybox to day
 
         // Transition intensity and fog inside the method
-        TransitionIntensityAndFog();
     }
 
     // Method to trigger the night transition
     public void TriggerNightTransition()
     {
         targetIntensity = nightTargetIntensity; // Set to night
-        skyboxMaterial = nightSkybox;
         targetFogColor = nightFogColor;
         RenderSettings.fogDensity = nightFogDensity;
         cloudsNightPrefab.SetActive(true); // Enable clouds for night
@@ -60,25 +56,49 @@ public class DayNightCycle : MonoBehaviour
         RenderSettings.skybox = nightSkybox; // Change the skybox to night
 
         // Transition intensity and fog inside the method
-        TransitionIntensityAndFog();
     }
 
-    // Transition intensity and fog logic
-    public void TransitionIntensityAndFog()
+    // Method to increase fog independently
+    public void IncreaseFog(float targetDensity, Color targetColor)
     {
         float transitionSpeed = 1.0f; // Set your desired transition speed here
-        float currentIntensity = sun.intensity;
         Color currentFogColor = RenderSettings.fogColor;
 
-        while (Mathf.Abs(currentIntensity - targetIntensity) > 0.01f || currentFogColor != targetFogColor)
-        {
-            currentIntensity = Mathf.Lerp(currentIntensity, targetIntensity, Time.deltaTime * transitionSpeed);
-            sun.intensity = currentIntensity;
+        RenderSettings.fogDensity = Mathf.Lerp(RenderSettings.fogDensity, targetDensity, Time.deltaTime * transitionSpeed);
+        currentFogColor = Color.Lerp(currentFogColor, targetColor, Time.deltaTime * transitionSpeed);
+        RenderSettings.fogColor = currentFogColor;
+    }
 
-            currentFogColor = Color.Lerp(currentFogColor, targetFogColor, Time.deltaTime * transitionSpeed);
-            RenderSettings.fogColor = currentFogColor;
+    // Method to decrease fog independently
+    public void DecreaseFog(float targetDensity, Color targetColor)
+    {
+        float transitionSpeed = 1.0f; // Set your desired transition speed here
+        Color currentFogColor = RenderSettings.fogColor;
 
-            RenderSettings.fogDensity = Mathf.Lerp(RenderSettings.fogDensity, targetIntensity > 0.3f ? dayFogDensity : nightFogDensity, Time.deltaTime * transitionSpeed);
-        }
+        RenderSettings.fogDensity = Mathf.Lerp(RenderSettings.fogDensity, targetDensity, Time.deltaTime * transitionSpeed);
+        currentFogColor = Color.Lerp(currentFogColor, targetColor, Time.deltaTime * transitionSpeed);
+        RenderSettings.fogColor = currentFogColor;
+    }
+    public void IncreaseDayFog()
+    {
+        IncreaseFog(dayFogDensity, dayFogColor);
+    }
+
+    // Trigger night fog increase transition
+    public void IncreaseNightFog()
+    {
+        IncreaseFog(nightFogDensity, nightFogColor);
+    }
+
+    // Trigger day fog decrease transition
+    public void DecreaseDayFog()
+    {
+        DecreaseFog(dayFogDensity, dayFogColor);
+    }
+
+    // Trigger night fog decrease transition
+    public void DecreaseNightFog()
+    {
+        DecreaseFog(nightFogDensity, nightFogColor);
     }
 }

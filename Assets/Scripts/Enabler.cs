@@ -22,6 +22,7 @@ public class Enabler: MonoBehaviour
 
             // Set the flag to true to indicate that the event has been triggered
             eventTriggered = true;
+            Debug.Log("Gravity Re-enabled. "  +  "Rig Rotation reset. ");
 
             // You can add more logic here as needed
         }
