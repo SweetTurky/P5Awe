@@ -11,6 +11,13 @@ public class TorchManager : MonoBehaviour
     private bool hasPlayedEndGameVoiceover = false; // Flag to track if the end game voiceover has been played
     public AudioClip lightVO;
 
+    private UIController uiController; // Reference to the UIController script
+
+    void Start()
+    {
+        // Get the UIController component from an object in the scene
+        uiController = FindObjectOfType<UIController>();
+    }
     public void TorchLit()
     {
         litTorchesCount++;
@@ -28,6 +35,11 @@ public class TorchManager : MonoBehaviour
             winParticles.Play();
             //Play final speak from AudioManager
             AudioManager.instance.PlayEndGameVoiceoverWithDelay(0f);
+            //Call fade to black method with delay argument
+            if (uiController != null)
+            {
+                uiController.FadeOut(7f);
+            }
             // Invoke the scene switch after the specified time
             Invoke("SwitchScene", invokeTime);
         }
@@ -37,5 +49,6 @@ public class TorchManager : MonoBehaviour
     {
         // Replace "YourSceneName" with the actual scene name you want to switch to
         SceneManager.LoadScene("Main Scene (Day)");
+        litTorchesCount = 0;
     }
 }

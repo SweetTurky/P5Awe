@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,36 +7,25 @@ public class UIController : MonoBehaviour
     public GameObject fadeBlackImage;
     public float fadeInSpeed = 0.2f;
     public float fadeOutSpeed = 1.0f;
-    
 
     void Start()
     {
-        StartCoroutine(fadeBlackOutSquare(false));
+        StartCoroutine(FadeBlackOutSquare(false, 0)); // Start immediately by default
     }
 
-    void Update()
+    public void FadeIn(float delay = 0) //call this from other scripts
     {
-        /*if (Input.GetKeyDown(KeyCode.A))
-        {
-            StartCoroutine(fadeBlackOutSquare());
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            StartCoroutine(fadeBlackOutSquare(false));
-        }
-        if(fadeBlackImage.GetComponent<Image>().color.a < 0.01f)
-        {
-            fadeBlackImage.SetActive(false);
-        }
-        if (fadeBlackImage.GetComponent<Image>().color.a > 0.01f)
-        {
-            fadeBlackImage.SetActive(true);
-        }*/
+        StartCoroutine(FadeBlackOutSquare(false, delay));
     }
 
-    public IEnumerator fadeBlackOutSquare(bool fadeToBlack = true)
+    public void FadeOut(float delay = 0) //call this from other scripts
     {
-        yield return new WaitForSeconds(3f); // Wait for 3 seconds
+        StartCoroutine(FadeBlackOutSquare(true, delay));
+    }
+
+    public IEnumerator FadeBlackOutSquare(bool fadeToBlack = true, float delay = 0)
+    {
+        yield return new WaitForSeconds(delay); // Wait for specified delay
 
         Color objectColor = fadeBlackImage.GetComponent<Image>().color;
         float fadeAmount;
@@ -51,8 +39,9 @@ public class UIController : MonoBehaviour
                 objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, fadeAmount);
                 fadeBlackImage.GetComponent<Image>().color = objectColor;
                 yield return null;
-            } 
-        }else
+            }
+        }
+        else
         {
             while (fadeBlackImage.GetComponent<Image>().color.a > 0)
             {
@@ -63,8 +52,5 @@ public class UIController : MonoBehaviour
                 yield return null;
             }
         }
-
-        
     }
 }
-

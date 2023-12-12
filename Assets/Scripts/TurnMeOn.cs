@@ -6,8 +6,16 @@ public class TurnMeOn : MonoBehaviour
     public AudioSource audioSourceWhoosh; // Reference to the AudioSource component
     public AudioSource audioSourceBurning; // Reference to the AudioSource component
 
+    private bool hasBeenLit = false; // Flag to track if the torch has been lit
+
     public void ActivateLightAndParticles()
     {
+        // If the torch has already been lit, return to avoid re-triggering the torch lit logic
+        if (hasBeenLit)
+        {
+            return;
+        }
+
         // Activate lights and particle systems on collision
         Light[] lights = GetComponentsInChildren<Light>();
         foreach (Light light in lights)
@@ -26,10 +34,13 @@ public class TurnMeOn : MonoBehaviour
         {
             if (!audioSourceWhoosh.isPlaying && !audioSourceBurning.isPlaying) // Check if the audio is not already playing
             {
-                audioSourceWhoosh.PlayOneShot(audioSourceWhoosh.clip);
+                audioSourceWhoosh.Play();
                 audioSourceBurning.Play();
             }
         }
+
+        // Set the flag to true indicating the torch has been lit
+        hasBeenLit = true;
 
         // Notify the TorchManager that this torch has been lit
         if (torchManager != null)
