@@ -5,8 +5,16 @@ public class TurnMeOn : MonoBehaviour
     public TorchManager torchManager; // Reference to the TorchManager script
     public AudioSource audioSourceWhoosh; // Reference to the AudioSource component
     public AudioSource audioSourceBurning; // Reference to the AudioSource component
+    public ParticleSystem[] particleSystems;
+    public Light[] lights;
 
     private bool hasBeenLit = false; // Flag to track if the torch has been lit
+
+    private void Awake()
+    {
+        particleSystems = GetComponentsInChildren<ParticleSystem>();
+        lights = GetComponentsInChildren<Light>();
+    }
 
     public void ActivateLightAndParticles()
     {
@@ -17,13 +25,13 @@ public class TurnMeOn : MonoBehaviour
         }
 
         // Activate lights and particle systems on collision
-        Light[] lights = GetComponentsInChildren<Light>();
+
         foreach (Light light in lights)
         {
             light.enabled = true;
         }
 
-        ParticleSystem[] particleSystems = GetComponentsInChildren<ParticleSystem>();
+
         foreach (ParticleSystem particles in particleSystems)
         {
             particles.Play();
