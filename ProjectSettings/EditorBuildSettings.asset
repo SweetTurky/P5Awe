@@ -15,6 +15,8 @@ EditorBuildSettings:
     path: Assets/PureNature/Scenes/Scene_Demo/Main Scene (Day).unity
     guid: 3cd67407540b39b4cadf3439a2bfd7f9
   m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2b305f5ba15ab0e48a780b72eb9f0b6c,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 3a2cbd7566361414ea076599f681e12b,
