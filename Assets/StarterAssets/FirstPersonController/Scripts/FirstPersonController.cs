@@ -129,6 +129,15 @@ namespace StarterAssets
 			Grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
 		}
 
+		public void DisableGravity()
+        {
+			Gravity = 0f;
+        }
+
+		public void EnableGravity()
+		{
+			Gravity = -15.0f;
+		}
 		private void CameraRotation()
 		{
 			// if there is an input

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PhysicsPickup : MonoBehaviour
 {
@@ -14,11 +15,7 @@ public class PhysicsPickup : MonoBehaviour
     public ShowUIOnLook showUIOnLook;
     public bool pickedUp;
     public GameObject runeStone;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public UnityEvent onInteract; // UnityEvent that can be assigned in the Inspector
 
     // Update is called once per frame
     void Update()
@@ -48,7 +45,7 @@ public class PhysicsPickup : MonoBehaviour
             Ray CameraRay = PlayerCamera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
             if (Physics.Raycast(CameraRay, out RaycastHit Hitinfo, PickupRange, InteractMask))
             {
-                Debug.Log("Fly method");
+                onInteract.Invoke();
             }
         }
     }

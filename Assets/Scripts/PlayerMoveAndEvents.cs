@@ -55,7 +55,7 @@ public class PlayerMoveAndEvents : MonoBehaviour
 
             float t = Mathf.Clamp01(elapsedTime / movementDuration); // Calculate the interpolation parameter
 
-            Vector3 newPosition = Vector3.Slerp(initialPosition, targetPosition.position, t);
+            Vector3 newPosition = Vector3.Lerp(initialPosition, targetPosition.position, t);
             myXRRig.transform.position = new Vector3(newPosition.x, newPosition.y, newPosition.z); // Update XR rig's position
 
             if (t >= 1.0f)
