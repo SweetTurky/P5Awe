@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/PureNature/Scenes/Scene_Demo/Main Scene PC.unity
     guid: c5a8f754dadacd94193b1f23999a5faf
+  - enabled: 1
+    path: Assets/PureNature/Scenes/Scene_Demo/Main Scene PC (Day).unity
+    guid: 3cd67407540b39b4cadf3439a2bfd7f9
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
       type: 2}
