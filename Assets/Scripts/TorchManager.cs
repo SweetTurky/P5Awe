@@ -48,7 +48,7 @@ public class TorchManager : MonoBehaviour
     private void SwitchScene()
     {
         // Replace "YourSceneName" with the actual scene name you want to switch to
-        SceneManager.LoadScene("Main Scene (Day)");
+        SceneManager.LoadScene("Main Scene PC (Day)");
         litTorchesCount = 0;
     }
 }
